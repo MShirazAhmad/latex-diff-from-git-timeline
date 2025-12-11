@@ -16,19 +16,6 @@ Use it from the Git Timeline/Source Control or Explorer via right‑click.
 5. A `diff_<old>_to_<new>_<file>.tex` is created
 6. Compile it: `pdflatex diff_...tex` → open the PDF to see changes highlighted
 
-## Requirements
-- `latexdiff` available on PATH (TeX Live/MacTeX typically installs to `/Library/TeX/texbin`)
-- A Git repo with your `.tex` file tracked
-
-## Install (local VSIX)
-```zsh
-code --install-extension /path/to/latex-diff-from-timeline-1.0.0.vsix
-```
-If `code` is not in PATH, add:
-```zsh
-export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
-```
-
 ## Detailed Workflows
 
 ### Workflow 1: Compare Two Commits
