@@ -1,7 +1,7 @@
 {
   "name": "latex-diff-from-timeline",
-  "displayName": "LaTeX Compilable Diff (Git Timeline)",
-  "description": "Create a LaTeX-compilable diff (.tex) from Git Timeline or Explorer. When compiled, the PDF clearly shows all additions and deletions.",
+  "displayName": "LaTeX Compilable Diff (VS Code)",
+  "description": "VS Code extension: create LaTeX-compilable diffs (.tex) from Git Timeline/Explorer and compile to see highlighted changes.",
   "version": "1.0.0",
   "publisher": "MShirazAhmad",
   "engines": {
@@ -12,8 +12,25 @@
     "url": "https://github.com/MShirazAhmad/latex-diff-from-git-timeline"
   },
   "license": "MIT",
-  "categories": ["Other", "Programming Languages", "Formatters", "SCM Providers"],
-  "keywords": ["latex", "latexdiff", "diff", "git", "timeline", "tex", "compilable", "pdf", "changes"],
+  "categories": [
+    "Other",
+    "Programming Languages",
+    "Formatters",
+    "SCM Providers"
+  ],
+  "keywords": [
+    "changes",
+    "compilable",
+    "diff",
+    "extension",
+    "git",
+    "latex",
+    "latexdiff",
+    "pdf",
+    "tex",
+    "timeline",
+    "vscode"
+  ],
   "main": "./out/extension.js",
   "activationEvents": [
     "onCommand:latexDiff.generateFromTimeline"
@@ -59,6 +76,7 @@
   "devDependencies": {
     "@types/node": "^20.0.0",
     "@types/vscode": "^1.85.0",
+    "@vscode/vsce": "^3.7.1",
     "typescript": "^5.0.0"
   }
 }
