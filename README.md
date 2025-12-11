@@ -1,9 +1,26 @@
 # LaTeX Compilable Diff from Git Timeline (VS Code Extension)
 
-Create a LaTeX‑compilable diff `.tex` using `latexdiff` directly from VS Code. This is a VS Code extension that runs from Git Timeline/Source Control or Explorer.
-Compile the generated `.tex` to get a PDF that visually highlights all modifications:
+VS Code extension that creates a LaTeX‑compilable diff `.tex` using `latexdiff` from Git Timeline/Source Control or Explorer.
+Compile the generated `.tex` to get a PDF that highlights all modifications:
 - Additions shown in blue
 - Deletions shown in red
+
+## Features
+- Right‑click command in Git Timeline/Source Control and Explorer for `.tex` files
+- Compare commit↔commit or commit↔working directory
+- Generates self‑contained `diff_<old>_to_<new>_<file>.tex` ready to compile
+- Zero runtime npm dependencies; uses VS Code API and `latexdiff`
+
+## Requirements
+- VS Code 1.85+
+- `latexdiff` on PATH (TeX Live/MacTeX/MiKTeX)
+- TeX distribution (e.g., TeX Live 2020+, MacTeX 2020+, MiKTeX)
+- Git‑tracked `.tex` files
+
+## Install
+- Download the latest VSIX from [GitHub Releases](https://github.com/MShirazAhmad/latex-diff-from-git-timeline/releases/latest) and install via **Extensions → … → Install from VSIX**
+- Or from a terminal: `code --install-extension /path/to/latex-diff-from-timeline-1.0.0.vsix`
+- If `code` is not on PATH (macOS): `export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"`
 
 Use it from the Git Timeline/Source Control or Explorer via right‑click.
 
