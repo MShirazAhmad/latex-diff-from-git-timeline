@@ -1,0 +1,12 @@
+.gitignore
+.git
+node_modules
+out/test
+src
+tsconfig.json
+tslint.json
+.mocharc.json
+*.vsix
+**/*.map
+**/*.ts
+!**/*.d.ts
