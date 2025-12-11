@@ -1,6 +1,11 @@
-# LaTeX Diff from Timeline
+# LaTeX Compilable Diff (Git Timeline)
 
-Generate LaTeX diffs (`latexdiff`) directly from VS Code using right‑click in Source Control or Explorer.
+Create a LaTeX‑compilable diff `.tex` using `latexdiff` directly from VS Code.
+Compile the generated `.tex` to get a PDF that visually highlights all modifications:
+- Additions shown in blue
+- Deletions shown in red
+
+Use it from the Git Timeline/Source Control or Explorer via right‑click.
 
 ## Requirements
 - `latexdiff` available on PATH (TeX Live/MacTeX typically installs to `/Library/TeX/texbin`)
@@ -16,21 +21,22 @@ export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PA
 ```
 
 ## Usage
-- Open your repo in VS Code.
-- Locate a `.tex` file in Source Control (Changes or History) or in Explorer.
-- Right‑click the file → `Generate LaTeX Diff`.
-- Pick the OLD version, then the NEW version:
-  - You can choose `Working Directory (Uncommitted Changes)` to compare against your current edits.
-  - Or pick any two commits.
-- The extension writes a diff file next to your source: `diff_<old>_to_<new>_<file>.tex` and offers to open it.
+- Open your LaTeX project in VS Code.
+- Find your `.tex` file in Source Control (Changes/History) or in Explorer.
+- Right‑click → `Generate LaTeX Diff`.
+- Choose the OLD version, then the NEW version:
+  - Select `Working Directory (Uncommitted Changes)` to compare against your current edits.
+  - Or pick any two commits from the file history.
+- The extension creates `diff_<old>_to_<new>_<file>.tex` next to your source and offers to open it.
+- Compile the diff `.tex` (e.g., `pdflatex diff_...tex`) to get a PDF with changes highlighted.
 
 ## Context menus
 - Source Control: appears on items in Changes and History
 - Explorer: appears on `.tex` files
 
 ## Output
-- A self‑contained `.tex` produced by `latexdiff` with additions/deletions highlighted.
-- Compile it as usual to get a PDF showing tracked changes.
+- A self‑contained `.tex` produced by `latexdiff` that compiles like any LaTeX file.
+- The resulting PDF shows tracked changes (blue additions, red deletions) for quick review.
 
 ## Quick Commands
 - Reinstall updated build:
@@ -47,8 +53,8 @@ vsce package
 ## Troubleshooting
 - Command not visible: Reload window (`Cmd+R`) and ensure you right‑click a `.tex` item.
 - `latexdiff` not found: Verify with `which latexdiff`. On macOS, ensure `/Library/TeX/texbin` is in PATH.
-- File not in Git: Stage/commit the file so history exists.
-- Unicode/shell issues: The extension writes temp files and calls `latexdiff` on those to avoid shell quoting bugs.
+- No history: Stage/commit the file so history exists, or compare commit ↔ working directory.
+- Shell quoting: The extension writes temp files and invokes `latexdiff` on those to avoid quoting issues.
 
 ## Notes
 - Works with at least one commit; can compare commit↔commit or commit↔working.

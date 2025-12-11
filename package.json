@@ -1,7 +1,7 @@
 {
   "name": "latex-diff-from-timeline",
-  "displayName": "LaTeX Diff from Timeline",
-  "description": "Generate LaTeX diffs from Git Timeline context menu",
+  "displayName": "LaTeX Compilable Diff (Git Timeline)",
+  "description": "Create a LaTeX-compilable diff (.tex) from Git Timeline or Explorer. When compiled, the PDF clearly shows all additions and deletions.",
   "version": "1.0.0",
   "publisher": "MShirazAhmad",
   "engines": {
@@ -13,7 +13,7 @@
   },
   "license": "MIT",
   "categories": ["Other", "Programming Languages", "Formatters", "SCM Providers"],
-  "keywords": ["latex", "latexdiff", "diff", "git", "timeline", "tex"],
+  "keywords": ["latex", "latexdiff", "diff", "git", "timeline", "tex", "compilable", "pdf", "changes"],
   "main": "./out/extension.js",
   "activationEvents": [
     "onCommand:latexDiff.generateFromTimeline"
