@@ -1,4 +1,4 @@
-# LaTeX Compilable Diff from Git Timeline (VS Code Extension)
+# LaTeX Diff from Git Timeline VS Code Extension
 
 VS Code extension that creates a LaTeX‑compilable diff `.tex` using `latexdiff` from Git Timeline/Source Control or Explorer.
 Compile the generated `.tex` to get a PDF that highlights all modifications:
