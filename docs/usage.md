@@ -36,6 +36,16 @@ The extension writes a `diff_<old>_to_<new>_<file>.tex` file next to your source
 
 *The compiled PDF produced from the generated `latexdiff` file, showing additions in blue and deletions in red just as journals require.*
 
+## Full `latexdiff` Example (Updated Images)
+
+![Latexdiff full example page 2.](./_static/images/latexdiff-full-example-2.png)
+![Latexdiff full example page 3.](./_static/images/latexdiff-full-example-3.png)
+![Latexdiff full example page 4.](./_static/images/latexdiff-full-example-4.png)
+![Latexdiff full example page 5.](./_static/images/latexdiff-full-example-5.png)
+![Latexdiff full example page 6.](./_static/images/latexdiff-full-example-6.png)
+![Latexdiff full example page 7.](./_static/images/latexdiff-full-example-7.png)
+![Latexdiff full example page 8.](./_static/images/latexdiff-full-example-8.png)
+
 ---
 
 ## Quick Start
