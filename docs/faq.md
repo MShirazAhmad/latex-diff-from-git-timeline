@@ -63,7 +63,7 @@ On macOS, add to your shell profile:
 export PATH="/Library/TeX/texbin:$PATH"
 ```
 
-### The command "Generate LaTeX Diff" is not visible in the context menu.
+### The command "Track Changes in LaTeX" is not visible in the context menu.
 
 - Reload the VS Code window (`Cmd+R` / `Ctrl+R`).
 - Confirm you are right-clicking a `.tex` file (not a folder or non-TeX file).

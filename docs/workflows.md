@@ -5,7 +5,7 @@
 Compare edits between any two historical versions of your LaTeX file.
 
 1. Right-click the `.tex` file in **Source Control → History** (Timeline).
-2. Select **Generate LaTeX Diff**.
+2. Select **Track Changes in LaTeX**.
 3. Pick the **older commit** as OLD.
 4. Pick the **newer commit** as NEW.
 5. Compile the resulting diff `.tex` to review changes in PDF.
@@ -20,7 +20,7 @@ See what you've changed locally before staging or committing.
 
 1. Make edits to your `.tex` file.
 2. Right-click the file in **Source Control → Changes**.
-3. Select **Generate LaTeX Diff**.
+3. Select **Track Changes in LaTeX**.
 4. Pick a commit (e.g., `HEAD`) as OLD.
 5. Pick **"Working Directory (Uncommitted Changes)"** as NEW.
 6. Compile to review your pending edits in PDF.

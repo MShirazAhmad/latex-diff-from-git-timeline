@@ -6,9 +6,9 @@
 
 Open your LaTeX project in VS Code and right-click a `.tex` file in **Explorer** or **Source Control** (Changes/History).
 
-Select **Generate LaTeX Diff** from the context menu.
+Select **Track Changes in LaTeX** from the context menu.
 
-![Simplified VS Code context menu with "Generate LaTeX Diff" highlighted.](./_static/images/latexdiff-full-example-1.png)
+![Simplified VS Code context menu with "Track Changes in LaTeX" highlighted.](./_static/images/latexdiff-full-example-1.png)
 
 *Right-click any `.tex` file in Explorer or Source Control to start the diff workflow without leaving VS Code.*
 
@@ -42,14 +42,14 @@ The extension writes a `diff_<old>_to_<new>_<file>.tex` file next to your source
 
 1. Open your LaTeX project in VS Code.
 2. Right-click a `.tex` file in **Source Control** (Changes/History) or **Explorer**.
-3. Select **Generate LaTeX Diff**.
+3. Select **Track Changes in LaTeX**.
 4. Choose OLD and NEW versions (commits or working directory).
 5. A `diff_<old>_to_<new>_<file>.tex` is created next to your source file.
 6. Compile it: `pdflatex diff_...tex` → open the PDF to see changes highlighted.
 
 ## Context Menu Locations
 
-The **Generate LaTeX Diff** command appears in:
+The **Track Changes in LaTeX** command appears in:
 
 | Location | Condition |
 |---|---|

@@ -1,10 +1,10 @@
 # Configuration file for the Sphinx documentation builder.
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
-project = "LaTeX Diff from Git Timeline"
+project = "Track Changes in LaTeX — VS Code Extension"
 copyright = "2024, MShirazAhmad"
 author = "MShirazAhmad"
-release = "1.0.0"
+release = "1.0.2"
 
 extensions = [
     "myst_parser",
@@ -27,7 +27,7 @@ html_theme_options = {
     },
 }
 
-html_title = "LaTeX Diff from Git Timeline"
+html_title = "Track Changes in LaTeX — VS Code Extension"
 
 myst_enable_extensions = [
     "colon_fence",

@@ -82,7 +82,7 @@ export function activate(context: vscode.ExtensionContext) {
         if (!newCommit) return;
 
         // Generate latexdiff
-        vscode.window.showInformationMessage('Generating LaTeX diff...');
+        vscode.window.showInformationMessage('Tracking changes in LaTeX...');
 
         const outputDir = path.dirname(filePath);
         const oldLabel = oldCommit.commit === 'WORKING' ? 'working' : oldCommit.commit.slice(0, 7);
@@ -131,7 +131,7 @@ export function activate(context: vscode.ExtensionContext) {
         fs.unlinkSync(newFile);
 
         vscode.window.showInformationMessage(
-          `LaTeX diff created: ${path.basename(outputFile)}`,
+          `Tracked changes file created: ${path.basename(outputFile)}`,
           'Open'
         ).then(choice => {
           if (choice === 'Open') {

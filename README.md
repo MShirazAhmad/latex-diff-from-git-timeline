@@ -1,6 +1,6 @@
-# LaTeX Diff from Git Timeline VS Code Extension
+# Track Changes in LaTeX — VS Code Extension
 
-I just published a new VS Code extension: **[LaTeX Diff from Git Timeline](https://marketplace.visualstudio.com/items?itemName=ShirazAhmad.latex-diff-from-timeline)**. It lets you visualize how your LaTeX documents evolve by building diffs straight from the git commit history.
+I just published a new VS Code extension: **[Track Changes in LaTeX — VS Code Extension](https://marketplace.visualstudio.com/items?itemName=MShirazAhmad.track-changes-in-latex-vscode)**. It lets you visualize how your LaTeX documents evolve by building diffs straight from the git commit history.
 
 ## What it does
 - Shows a commit-by-commit view of your LaTeX files so you can track changes visually.
@@ -14,8 +14,8 @@ Keeping track of LaTeX edits across branches can be tedious. This extension keep
 Clone the repository and install the extension locally to give it a spin:
 
 ```bash
-git clone https://github.com/MShirazAhmad/latex-diff-from-git-timeline.git
-cd latex-diff-from-git-timeline
+git clone https://github.com/MShirazAhmad/Track-Changes-in-LaTeX-VSCode.git
+cd Track-Changes-in-LaTeX-VSCode
 npm install
 npm run compile
 npx @vscode/vsce package
@@ -28,7 +28,7 @@ Then load the extension into VS Code from the generated package (**Extensions** 
 If you usually install extensions by searching in VS Code:
 
 1. Open **Extensions** (`Ctrl+Shift+X` / `Cmd+Shift+X`).
-2. Search: `latex-diff-from-git-timeline`.
+2. Search: `Track Changes in LaTeX — VS Code Extension`.
 3. Open the extension page and click **Install**.
 
 ![VS Code Marketplace search result and extension details page showing the Install button.](https://github.com/user-attachments/assets/071fe8ba-0148-441f-94a7-0e1ae3f95d79)
@@ -37,14 +37,14 @@ If you usually install extensions by searching in VS Code:
 
 ## How to use it
 - Open your LaTeX project in VS Code, and right-click a `.tex` file in **Source Control** (Changes/History) or **Explorer**.
-- Select **Generate LaTeX Diff**, choose the OLD version, then pick the NEW version (a commit or your working directory).
+- Select **Track Changes in LaTeX**, choose the OLD version, then pick the NEW version (a commit or your working directory).
 - The extension writes a `diff_<old>_to_<new>_<file>.tex` file next to your source file and offers to open it.
 - Compile that diff file (`pdflatex diff_...tex`) to produce a PDF with tracked changes: additions in blue, deletions in red.
 - If you want the PDF to mirror your journal template, compile with the same main document preamble (e.g., `pdflatex -jobname=tracked-change "\input{diff_...tex}"`) so fonts and spacing match.
 
 ## In-editor selection flow (screenshots)
 
-![Simplified VS Code context menu with "Generate LaTeX Diff" highlighted.](./docs/_static/images/latexdiff-full-example-1.png)
+![Simplified VS Code context menu with "Track Changes in LaTeX" highlighted.](./docs/_static/images/latexdiff-full-example-1.png)
 *Right-click any `.tex` file in Explorer or Source Control to start the diff workflow without leaving VS Code.*
 
 ![Stylized VS Code quick pick for "Select OLD commit" highlighting the choice of a historical commit.](./docs/_static/images/latexdiff-full-example-2.png)

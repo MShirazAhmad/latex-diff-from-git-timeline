@@ -26,7 +26,7 @@ When reporting a bug or requesting a feature, include:
 - Expected result
 - Actual result
 
-Issues can be opened at [github.com/MShirazAhmad/latex-diff-from-git-timeline/issues](https://github.com/MShirazAhmad/latex-diff-from-git-timeline/issues).
+Issues can be opened at [github.com/MShirazAhmad/Track-Changes-in-LaTeX-VSCode/issues](https://github.com/MShirazAhmad/Track-Changes-in-LaTeX-VSCode/issues).
 
 ## Opening a Pull Request
 

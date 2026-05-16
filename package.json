@@ -1,15 +1,15 @@
 {
-  "name": "latex-diff-from-timeline",
-  "displayName": "LaTeX Compilable Diff (VS Code)",
+  "name": "track-changes-in-latex-vscode",
+  "displayName": "Track Changes in LaTeX — VS Code Extension",
   "description": "VS Code extension: create LaTeX-compilable diffs (.tex) from Git Timeline/Explorer and compile to see highlighted changes.",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "publisher": "MShirazAhmad",
   "engines": {
     "vscode": "^1.85.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/MShirazAhmad/latex-diff-from-git-timeline"
+    "url": "https://github.com/MShirazAhmad/Track-Changes-in-LaTeX-VSCode"
   },
   "license": "MIT",
   "categories": [
@@ -39,7 +39,7 @@
     "commands": [
       {
         "command": "latexDiff.generateFromTimeline",
-        "title": "Generate LaTeX Diff"
+        "title": "Track Changes in LaTeX"
       }
     ],
     "menus": {
