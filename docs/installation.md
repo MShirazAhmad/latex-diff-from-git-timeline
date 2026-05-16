@@ -9,6 +9,18 @@
 | TeX distribution | TeX Live 2020+, MacTeX 2020+, or MiKTeX |
 | Git | Git-tracked `.tex` files |
 
+## Quick Setup from VS Code Marketplace
+
+If you install extensions directly from VS Code search:
+
+1. Open **Extensions** (`Ctrl+Shift+X` / `Cmd+Shift+X`).
+2. Search for `latex-diff-from-git-timeline` (or `LaTeX Compilable Diff`).
+3. Open the extension page and click **Install**.
+
+![VS Code Marketplace search result and extension details page showing the Install button.](https://github.com/user-attachments/assets/071fe8ba-0148-441f-94a7-0e1ae3f95d79)
+
+*You can install directly from Marketplace after searching in VS Code.*
+
 ## Install from VSIX (Recommended)
 
 1. Download the latest `.vsix` from [GitHub Releases](https://github.com/MShirazAhmad/latex-diff-from-git-timeline/releases/latest).

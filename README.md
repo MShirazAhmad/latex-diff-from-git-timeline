@@ -23,6 +23,18 @@ npx @vscode/vsce package
 
 Then load the extension into VS Code from the generated package (**Extensions** → `...` → **Install from VSIX**) and start diffing your LaTeX files against any commit in the timeline. Feedback and contributions are welcome.
 
+## Quick setup from VS Code Marketplace
+
+If you usually install extensions by searching in VS Code:
+
+1. Open **Extensions** (`Ctrl+Shift+X` / `Cmd+Shift+X`).
+2. Search: `latex-diff-from-git-timeline` (or `LaTeX Compilable Diff`).
+3. Open the extension and click **Install**.
+
+![VS Code Marketplace search result and extension details page showing the Install button.](https://github.com/user-attachments/assets/071fe8ba-0148-441f-94a7-0e1ae3f95d79)
+
+*Marketplace view: find the extension in search and install it directly from VS Code.*
+
 ## How to use it
 - Open your LaTeX project in VS Code, and right-click a `.tex` file in **Source Control** (Changes/History) or **Explorer**.
 - Select **Generate LaTeX Diff**, choose the OLD version, then pick the NEW version (a commit or your working directory).
