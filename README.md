@@ -85,22 +85,6 @@ Install locally for validation:
 code --install-extension ./track-changes-in-latex-vscode-2.0.0.vsix
 ```
 
-## Publish VSIX v2 to marketplace.visualstudio.com
-
-1. Ensure you are logged in to the publisher account `MShirazAhmad`.
-2. Build the VSIX using the commands above.
-3. Publish with `vsce`:
-
-```bash
-npx @vscode/vsce publish
-```
-
-If publishing from an already-built VSIX is preferred:
-
-```bash
-npx @vscode/vsce publish --packagePath ./track-changes-in-latex-vscode-2.0.0.vsix
-```
-
 ## In-editor selection flow (screenshots)
 
 ![Simplified VS Code context menu with "Track Changes in LaTeX" highlighted.](./docs/_static/images/latexdiff-full-example-1.png)
