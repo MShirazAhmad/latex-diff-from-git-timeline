@@ -63,7 +63,7 @@ Recommended revision workflow:
   - clean revised PDF
   - tracked-changes PDF
 
-## Build VSIX V2 (this revision)
+## Build VSIX v2 (this revision)
 
 From the repository root:
 
@@ -85,7 +85,7 @@ Install locally for validation:
 code --install-extension ./track-changes-in-latex-vscode-2.0.0.vsix
 ```
 
-## Publish VSIX V2 to marketplace.visualstudio.com
+## Publish VSIX v2 to marketplace.visualstudio.com
 
 1. Ensure you are logged in to the publisher account `MShirazAhmad`.
 2. Build the VSIX using the commands above.
