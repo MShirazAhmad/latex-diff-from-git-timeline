@@ -69,7 +69,7 @@
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
-    "package:vsix": "vsce package --allow-missing-repository --baseImagesUrl https://raw.githubusercontent.com/MShirazAhmad/Track-Changes-in-LaTeX-VSCode/main --out track-changes-in-latex-vscode-2.0.0.vsix",
+    "package:vsix": "vsce package --allow-missing-repository --out track-changes-in-latex-vscode-2.0.0.vsix && node scripts/use-local-readme-images-in-vsix.js track-changes-in-latex-vscode-2.0.0.vsix",
     "watch": "tsc -watch -p ./",
     "pretest": "npm run compile && npm run lint",
     "lint": "eslint src --ext ts"
