@@ -3,7 +3,7 @@
   "displayName": "Track Changes in LaTeX — VS Code Extension",
   "description": "VS Code extension: create LaTeX-compilable diffs (.tex) from Git Timeline/Explorer and compile to see highlighted changes.",
   "version": "2.0.1",
-  "publisher": "MShirazAhmad",
+  "publisher": "ShirazAhmad",
   "engines": {
     "vscode": "^1.85.0"
   },
