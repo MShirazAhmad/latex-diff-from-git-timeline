@@ -1,72 +1,36 @@
 # Contributing
 
-Contributions, bug reports, and feature requests are welcome!
+Contributions, bug reports, and feature requests are welcome.
 
-## Getting Started
+## Before You Start
 
-```bash
-git clone https://github.com/MShirazAhmad/latex-diff-from-git-timeline.git
-cd latex-diff-from-git-timeline
-npm install
-npm run compile
-code .
-```
+- Read the user-facing guides in {doc}`installation`, {doc}`usage`, and {doc}`workflows`.
+- Use the setup steps in {doc}`development` for local builds and packaging.
+- Keep changes focused so reviews stay easy to follow.
 
-## Testing Locally
+## Good Contributions
 
-1. Open the extension folder in VS Code.
-2. Press `F5` to launch the **Extension Development Host**.
-3. Open a LaTeX project with a Git history in the new window.
-4. Right-click a `.tex` file to test the command.
+- Fixes for bugs in diff generation or file handling
+- Improvements to VS Code command discovery and workflow UX
+- Documentation updates for installation, usage, and troubleshooting
+- New tests or validation steps that fit the existing project structure
 
-## Build & Package
+## Opening an Issue
 
-```bash
-npm run compile
-npx vsce package
-# Creates: latex-diff-from-timeline-1.0.0.vsix
-```
-
-## Code Structure
-
-| File | Purpose |
-|---|---|
-| `src/extension.ts` | Main command handler |
-| `package.json` | VS Code manifest, commands, and menus |
-| `tsconfig.json` | TypeScript configuration |
-
-## Extending the Extension
-
-To add features (e.g., custom diff options, inline previews):
-
-1. Edit `src/extension.ts`.
-2. Update `package.json` commands/menus if needed.
-3. Run `npm run compile`.
-4. Test with `F5` launch.
-5. Commit and push.
-
-## Useful Commands
-
-Reinstall an updated build:
-
-```bash
-code --uninstall-extension mshirazahmad.latex-diff-from-timeline
-code --install-extension /path/to/latex-diff-from-timeline-1.0.0.vsix
-```
-
-Package a new VSIX from the extension folder:
-
-```bash
-npm run compile
-npx vsce package
-```
-
-## Submitting Issues
-
-Found a bug or have a feature request? Open an issue on [GitHub](https://github.com/MShirazAhmad/latex-diff-from-git-timeline/issues) with:
+When reporting a bug or requesting a feature, include:
 
 - VS Code version
 - Extension version
 - Operating system
 - Steps to reproduce
-- Expected vs. actual behaviour
+- Expected result
+- Actual result
+
+Issues can be opened at [github.com/MShirazAhmad/latex-diff-from-git-timeline/issues](https://github.com/MShirazAhmad/latex-diff-from-git-timeline/issues).
+
+## Opening a Pull Request
+
+1. Create a focused branch for your change.
+2. Update documentation when behavior or setup changes.
+3. Run the existing validation commands listed in {doc}`development`.
+4. Summarize the user impact clearly in the pull request description.

@@ -42,19 +42,6 @@ export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PA
 ```
 :::
 
-## Install from Source
-
-```bash
-git clone https://github.com/MShirazAhmad/latex-diff-from-git-timeline.git
-cd latex-diff-from-git-timeline
-npm install
-npm run compile
-npx vsce package
-# Creates: latex-diff-from-timeline-1.0.0.vsix
-```
-
-Then install the generated VSIX as described above.
-
 ## Verify `latexdiff` Is Available
 
 ```bash
@@ -67,6 +54,10 @@ If `latexdiff` is not found, install the appropriate TeX distribution:
 - **macOS:** Install [MacTeX](https://www.tug.org/mactex/) and ensure `/Library/TeX/texbin` is in your `PATH`.
 - **Linux:** `sudo apt-get install texlive-extra-utils` (Debian/Ubuntu) or `sudo dnf install texlive-latexdiff` (Fedora).
 - **Windows (MiKTeX):** Install MiKTeX and run `miktex packages install latexdiff` in the MiKTeX Console.
+
+## Need a Local Build?
+
+If you want to clone the repository, package the extension yourself, or work on the source code, use the instructions in {doc}`development`.
 
 ## Uninstalling
 

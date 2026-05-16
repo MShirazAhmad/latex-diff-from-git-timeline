@@ -2,7 +2,7 @@
 
 **LaTeX Diff from Git Timeline** is a VS Code extension that lets you visualize how your LaTeX documents evolve by building diffs straight from the git commit history.
 
-I just published this extension to make it easy to track LaTeX edits across commits without ever leaving VS Code. It generates diffs using `latexdiff` and your repository history, making it straightforward to review edits before merging or sharing PDFs.
+This extension makes it easy to track LaTeX edits across commits without ever leaving VS Code. It generates diffs using `latexdiff` and your repository history, making it straightforward to review edits before merging or sharing PDFs.
 
 ## What It Does
 
