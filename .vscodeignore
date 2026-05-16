@@ -1,8 +1,10 @@
 .gitignore
 .git
 node_modules
+.history
 out/test
 src
+scripts
 tsconfig.json
 tslint.json
 .mocharc.json
